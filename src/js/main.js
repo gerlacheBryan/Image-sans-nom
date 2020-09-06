@@ -5,6 +5,7 @@ const main = {
     ecranDroit: null,
     textDroit: null,
     textGauche: null,
+    footer: null,
 
     init() {
         this.buttonDroit = document.querySelector('.btnRight')
@@ -13,6 +14,7 @@ const main = {
         this.ecranDroit = document.querySelector('.right')
         this.textDroit = document.querySelector('.contenuDroit')
         this.textGauche = document.querySelector('.contenuGauche')
+        this.footer = document.querySelector('.footer')
         this.apparitionDroit()
         this.apparitionGauche()
     },
@@ -21,8 +23,8 @@ const main = {
         this.buttonDroit.addEventListener('click', (e) => {
             this.ecranGauche.classList.add('disparition')
             this.ecranDroit.classList.add('elargissement')
-            this.textDroit.classList.remove('disparitionDroite')
-            this.textDroit.classList.add('apparitionDroite')
+            this.textDroit.classList.remove('disparition')
+            this.footer.classList.remove('disparition')
 
         })
     },
@@ -31,6 +33,7 @@ const main = {
                 this.ecranDroit.classList.add('disparition')
                 this.ecranGauche.classList.add('elargissement')
                 this.textGauche.classList.remove('disparition')
+                this.footer.classList.remove('disparition')
         })
     },
 }

@@ -1,0 +1,33 @@
+.premierBlocLieu,.deuxiemeBlocLieu, .troisiemeBlocLieu{
+    display: flex;
+    flex: 0 0 66.66%;
+
+}
+.premierPartieLieu{
+    background-color: var(--primarySecond);
+    height: 100vh;
+}
+.deuxiemePartieLieu{
+    background-color: var(--primaryWhite);
+    height: 100vh;
+}
+.titreLieu{
+    display: flex;
+    justify-content: center;
+}
+.troisiemePartieLieu{
+    background-color: var(--primaryFour);
+    height: 100vh;
+}
+.quatriemePartieLieu{
+    background-color: var(--primaryThird);
+    height: 100vh;
+}
+.cinquiemePartieLieu{
+    background-color: var(--primarySecond);
+    height: 100vh;
+}
+.sixiemePartieLieu{
+    background-color: var(--primaryWhite);
+    height: 100vh;
+}

@@ -1,0 +1,7 @@
+.contact{
+    background-image: url("../../Images/000_ISNbefore_005.jpg");
+    height: 100vh;
+}
+.sectionContact{
+    background-color: var(--primaryWhite);
+}

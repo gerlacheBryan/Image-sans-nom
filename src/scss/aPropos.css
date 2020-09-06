@@ -1,0 +1,30 @@
+body{
+    overflow-x: hidden;
+}
+.degradeJaune{
+    background: linear-gradient(0.25turn,#FFFF00,#FFCE31);
+    height: 96.5vh;
+    width: 110%;
+}
+.imageApropos{
+    background-image: url("../../Images/001_002.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 96.5vh;
+    width: 100%;
+    top: 16px;
+    position: absolute;
+    opacity: 0.4;
+}
+.description{
+    border: 10em solid white;
+    border-radius: 2rem;
+    position: absolute;
+    bottom: 14em;
+    right: 40em;
+}
+.textApropos{
+    font-family: var(--PrimaryFamilySecondary);
+    background-color: white;
+}

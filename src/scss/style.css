@@ -1,3 +1,7 @@
+@import "aPropos.css";
+@import "lieu.css";
+@import "contact.css";
+
 :root {
     --primaryOne: #FFC71C;
     --primarySecond: #EFA833;
@@ -11,6 +15,10 @@
     --PrimaryTailleh3: 2.30em;
     --PrimaryTailleh4: 2em;
     --PrimaryTailleTexte:1.50em;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 
 @font-face {
@@ -59,6 +67,7 @@ header {
 }
 .right{
     background-color: var(--primaryFour);
+    transition: 1s;
 }
 
 nav {
@@ -163,11 +172,11 @@ h3{
     font-size: var(--PrimaryTailleh3);
     padding: 1em;
 }
-.premierBloc{
+.premierBloc, .deuxiemeBloc{
     display: flex;
     flex: 0 0 33.33%;
 }
-.texteTitre{
+.texteTitre {
     text-align: left;
     font-size: var(--PrimaryTailleh4);
     font-family: var(--PrimaryFamily);
@@ -178,12 +187,22 @@ h3{
     background-color: var(--primaryFour);
     height: 100vh;
 }
+.imageExposition{
+    background-color: var(--primarySecond);
+    height: 100vh;
+}
 .texte{
     background-color: var(--primaryThird);
     height: 100vh;
     width: 100%;
 }
-.texteTexte{
+.texteExposition{
+    background-color: var(--primaryFour);
+    height: 100vh;
+    width: 100%;
+}
+
+.texteTexte, .texteTexteExposition{
     text-align: left;
     padding: 0.5em 1em;
     font-size: var(--PrimaryTailleTexte);
@@ -192,23 +211,28 @@ h3{
 .btnTexte{
     margin: 1em;
 }
-.avis{
+.avis, .avisExposition{
     display: flex;
     flex: 0 0 66.66%;
 }
-.avisTexte{
+.avisTexteExposition{
+    background-color: var(--primaryThird);
+    width: 66.66%;
+    height: 100vh;
+}
+.avisTexte {
     background-color: var(--primaryWhite);
     width: 66.66%;
     height: 100vh;
 }
-.avisTitre{
+.avisTitre, .avisTitreExposition{
     text-align: left;
     font-size: var(--PrimaryTailleh4);
     font-family: var(--PrimaryFamily);
     padding: 1em 0.7em;
     margin-top: 0.5em;
 }
-.avisTexteTexte{
+.avisTexteTexte, .avisTexteTexteExposition{
     text-align: left;
     padding: 0.5em 1em;
     font-family: var(--PrimaryFamilySecondary);
@@ -218,7 +242,34 @@ h3{
     background-color: var(--primaryThird);
     height: 100vh;
 }
+.avisImageExposition{
+    background-color: var(--primaryWhite);
+    height: 100vh;
+}
 footer{
     background-color: var(--primaryBlack);
 }
+.social-media{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.facebook{
+background-image: url("/Images/facebook.png");
+}
+.messenger{
+    background-image: url("/Images/messenger.png");
+}
+.tumblr{
+    background-image: url("/Images/tumblr.png");
+}
+
+
+
+
+
 
