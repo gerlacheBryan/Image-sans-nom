@@ -1,0 +1,224 @@
+:root {
+    --primaryOne: #FFC71C;
+    --primarySecond: #EFA833;
+    --primaryThird: #F2BA37;
+    --primaryFour: #363636;
+    --primaryBlack: #000000;
+    --primaryWhite: #FFFFFF;
+    --PrimaryFamily: Roboto;
+    --PrimaryFamilySecondary: Poppins;
+    --PrimaryTailleh2: 2.50em;
+    --PrimaryTailleh3: 2.30em;
+    --PrimaryTailleh4: 2em;
+    --PrimaryTailleTexte:1.50em;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/Fonts/Roboto/Roboto-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/Fonts/Poppins/Poppins-Regular.ttf") format("ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 1em;
+}
+
+header {
+    background-color: var(--primaryWhite);
+    z-index: 1;
+    min-height: 5em;
+    position: fixed;
+    right: 0;
+    left: 0;
+}
+
+.contenuAccueil{
+    display: flex;
+}
+.left, .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 50%;
+    padding: 3em;
+    box-sizing: border-box;
+    height: 96.5vh;
+}
+.left{
+    background-color: var(--primaryOne);
+    transition: 1s;
+}
+.right{
+    background-color: var(--primaryFour);
+}
+
+nav {
+    font-family: var(--PrimaryFamily);
+    font-size: 1.5em;
+    float: right;
+    margin: 2em;
+    margin-right: 1em;
+}
+ul{
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+    margin: 0 20px;
+    transition: 0.5s;
+}
+ul li a{
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding: 5px;
+    transition: 0.5s;
+}
+ul:hover li a{
+    transform: scale(1.5);
+    opacity: .2;
+    filter: blur(5px);
+}
+ul li a:hover{
+    transform: scale(2);
+    opacity: 1;
+    filter: blur(0);
+}
+ul li a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--primaryThird);
+    transition: transform 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1;
+}
+ul li a:hover:before{
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+h1{
+    text-indent: -9999px;
+    position: absolute;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    color: var(--primaryWhite);
+    font-family: var(--PrimaryFamily);
+    margin-top: -3em;
+    font-size: var(--PrimaryTailleh2);
+    margin-bottom: 0.50em;
+}
+.btn{
+    font-family: var(--PrimaryFamilySecondary);
+    font-size: 1.30em;
+    padding: .5rem;
+    border-radius: 10rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-dark{
+    background-color: var(--primaryBlack);
+    color: var(--primaryWhite);
+}
+.right h2{
+    margin: 0 auto 0.50em;
+}
+.disparition{
+    display: none;
+}
+.elargissement{
+    flex: 0 0 100%;
+}
+h3{
+    text-align: center;
+    font-family: var(--PrimaryFamily);
+    font-size: var(--PrimaryTailleh3);
+    padding: 1em;
+}
+.premierBloc{
+    display: flex;
+    flex: 0 0 33.33%;
+}
+.texteTitre{
+    text-align: left;
+    font-size: var(--PrimaryTailleh4);
+    font-family: var(--PrimaryFamily);
+    padding: 1em 0.7em;
+    margin-top: 0.5em;
+}
+.image{
+    background-color: var(--primaryFour);
+    height: 100vh;
+}
+.texte{
+    background-color: var(--primaryThird);
+    height: 100vh;
+    width: 100%;
+}
+.texteTexte{
+    text-align: left;
+    padding: 0.5em 1em;
+    font-size: var(--PrimaryTailleTexte);
+    font-family: var(--PrimaryFamilySecondary);
+}
+.btnTexte{
+    margin: 1em;
+}
+.avis{
+    display: flex;
+    flex: 0 0 66.66%;
+}
+.avisTexte{
+    background-color: var(--primaryWhite);
+    width: 66.66%;
+    height: 100vh;
+}
+.avisTitre{
+    text-align: left;
+    font-size: var(--PrimaryTailleh4);
+    font-family: var(--PrimaryFamily);
+    padding: 1em 0.7em;
+    margin-top: 0.5em;
+}
+.avisTexteTexte{
+    text-align: left;
+    padding: 0.5em 1em;
+    font-family: var(--PrimaryFamilySecondary);
+    font-size: var(--PrimaryTailleTexte);
+}
+.avisImage{
+    background-color: var(--primaryThird);
+    height: 100vh;
+}
+footer{
+    background-color: var(--primaryBlack);
+}
+
