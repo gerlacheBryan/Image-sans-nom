@@ -46,6 +46,7 @@ header {
     position: fixed;
     right: 0;
     left: 0;
+    top:0;
 }
 
 .contenuAccueil{
@@ -186,10 +187,14 @@ h3{
 .image{
     background-color: var(--primaryFour);
     height: 100vh;
+    position: sticky;
+    top: 0;
 }
 .imageExposition{
     background-color: var(--primarySecond);
     height: 100vh;
+    position: sticky;
+    top: 0;
 }
 .texte{
     background-color: var(--primaryThird);
@@ -267,6 +272,11 @@ background-image: url("/Images/facebook.png");
 .tumblr{
     background-image: url("/Images/tumblr.png");
 }
+.premiereImageLivres, .deuxiemeImageLivres, .premiereImageExpositions, .deuxiemeImageExposition{
+    position: sticky;
+    top: 0;
+}
+
 
 
 

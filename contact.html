@@ -28,11 +28,68 @@
 </h1>
 <main class="contact">
     <div>
-        <section class="sectionContact">
-            <h2>
-                Contactez-nous
-            </h2>
-        </section>
+        <h2 class="titreDeuxContact" aria-level="2" role="heading">
+            Contactez-nous
+        </h2>
+        <div class="blocBlanc">
+            <div class="contenuContact">
+            <h3 aria-level="3" role="heading">
+                L'image-sans-nom
+            </h3>
+            <p class="texteContact">
+                Place Vivegnis 6 4000 Liège
+            </p>
+            <p class="texteContact">
+               T : 0485 84 79 77
+            </p>
+            </div>
+            <div class="blocBlancDeux">
+                <h3>
+                    Besoin d'une information ?
+                </h3>
+                <form method="get" action="#">
+                    <div class="contactNom">
+                        <label for="preNom">
+                            Nom complet
+                        </label>
+                        <input type="text" name="preNom" id="preNom">
+                    </div>
+                    <div class="contactTelephone">
+                        <label for="telephone">
+                            Numéro de téléphone
+                        </label>
+                        <input type="tel" name="telephone" id="telephone">
+                    </div>
+                    <div class="contactLangue">
+                        <label for="langue">
+                            Langue
+                        </label>
+                        <select name="langue" id="langue">
+                            <option value="Français">Français</option>
+                            <option value="Anglais">Anglais</option>
+                            <option value="Néerlandais">Néerlandais</option>
+                        </select>
+                    </div>
+                    <div class="contactEmail">
+                        <label for="email">
+                            Adresse e-mail
+                        </label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="contactDemande">
+                        <label for="demande">
+                            Votre demande
+                        </label>
+                        <textarea name="demande" id="demande"></textarea>
+                    </div>
+                    <div class="contactBouton">
+                        <button type="submit" name="envoyer">
+                            Envoyer
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </main>
 </body>

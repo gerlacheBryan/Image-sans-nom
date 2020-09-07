@@ -1,11 +1,15 @@
 .premierBlocLieu,.deuxiemeBlocLieu, .troisiemeBlocLieu{
     display: flex;
-    flex: 0 0 66.66%;
+
 
 }
 .premierPartieLieu{
     background-color: var(--primarySecond);
     height: 100vh;
+    flex: 0 0 66.66%;
+}
+.deuxiemeImageLieu{
+    margin-left: -1em;
 }
 .deuxiemePartieLieu{
     background-color: var(--primaryWhite);
@@ -18,6 +22,7 @@
 .troisiemePartieLieu{
     background-color: var(--primaryFour);
     height: 100vh;
+    flex: 0 0 66.66%;
 }
 .quatriemePartieLieu{
     background-color: var(--primaryThird);
@@ -26,8 +31,34 @@
 .cinquiemePartieLieu{
     background-color: var(--primarySecond);
     height: 100vh;
+    flex: 0 0 66.66%;
 }
 .sixiemePartieLieu{
     background-color: var(--primaryWhite);
     height: 100vh;
+}
+.quatriemeImageLieu{
+    margin-bottom: 7.55em;
+}
+.cinquiemeImageLieu{
+    margin-bottom: 0.25em;
+    margin-left: -0.3em;
+
+}
+.sixiemeImageLieu{
+    margin-bottom: 0.30em;
+
+}
+.septiemeImageLieu{
+    margin-left: -0.3em;
+    margin-bottom: 0.2em;
+
+}
+.neuviemeImageLieu{
+    margin-left: -0.25em;
+
+}
+.premierImageLieu, .deuxiemeImageLieu, .troisiemeImageLieu, .quatriemeImageLieu,.cinquiemeImageLieu,.sixiemeImageLieu,.septiemeImageLieu, .huitiemeImageLieu,.neuviemeImageLieu,.dixiemeImageLieu{
+    top: 0;
+    position: sticky;
 }

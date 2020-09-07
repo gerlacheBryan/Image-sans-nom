@@ -2,6 +2,79 @@
     background-image: url("../../Images/000_ISNbefore_005.jpg");
     height: 100vh;
 }
-.sectionContact{
+.coordonnees{
     background-color: var(--primaryWhite);
+}
+.titreDeuxContact{
+    margin-top: 0;
+    color: var(--primaryBlack);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+.blocBlanc{
+    background-color: white;
+    height: 50vh;
+}
+.contenuContact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.texteContact{
+    padding-bottom: 1em;
+    font-size: 1.50em;
+    font-family: var(--PrimaryFamilySecondary);
+}
+form{
+    padding: 1.5em;
+    background-color: var(--primaryWhite);
+    display: grid;
+    font-family: Poppins;
+    grid-template-columns: repeat(2,1fr);
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--primaryBlack);
+    grid-gap: 20px;
+}
+input,select,textarea{
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+label{
+    display: block;
+}
+textarea{
+    grid-column: 1/5;
+    resize: none;
+    height: 150px;
+}
+.contactDemande{
+    grid-column: 1/3;
+}
+button{
+    padding: 10px 20px;
+    box-sizing: border-box;
+    float: right;
+    background: var(--primaryWhite);
+    border: none;
+}
+.contactBouton{
+    grid-column: 2/3;
+}
+.social-media{
+    border-top: 1px solid white;
+    padding-top: 30px;
+    display: flex;
+    margin: 5em auto 0;
+    max-width: 800px;
+    align-items: center;
+    justify-content: center;
+}
+button:hover{
+    background: #03e9f4;
+    color: white;
+    box-shadow: 0 0 5px #03e9f4
 }
